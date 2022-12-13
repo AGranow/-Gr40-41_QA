@@ -1,4 +1,4 @@
-package com.telran.oop;
+package com.telran.oop.encapsulation;
 
 public class Circle {
 

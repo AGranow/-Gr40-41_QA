@@ -1,4 +1,6 @@
-package com.telran.oop;
+package com.telran.oop.encapsulation;
+
+import com.telran.oop.encapsulation.Circle;
 
 public class Main {
     public static void main(String[] args) {
