@@ -1,4 +1,4 @@
-package com.telran.oop.encapsulation;
+package com.telran.oop.encapsulation.circle;
 
 public class Circle {
 
@@ -8,8 +8,12 @@ public class Circle {
     public Circle() {
     }
 
-    public Circle(double radius) {
-        this.radius = radius;
+    public Circle(Radius radius) {
+
+    }
+
+    public Circle(Diameter diameter) {
+
     }
 
     public Circle(double radius, double diameter) {
@@ -29,6 +33,9 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Переопредели меня - сделай красиво";
+        return "Circle{" +
+                "radius=" + radius +
+                ", diameter=" + diameter +
+                '}';
     }
 }
