@@ -41,7 +41,6 @@ public class Brackets {
                 }break;
             }
         }
-        if (!stack.isEmpty()) flag = false;
         return flag;
     }
 }
