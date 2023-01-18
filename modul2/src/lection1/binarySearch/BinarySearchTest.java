@@ -1,4 +1,4 @@
-package lection1;
+package lection1.binarySearch;
 
 import org.junit.Test;
 

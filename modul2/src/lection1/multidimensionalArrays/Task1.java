@@ -1,4 +1,4 @@
-package lection1;
+package lection1.multidimensionalArrays;
 
 /**
  *  Создать многомерный массив 4 x 6. Заполнить его символом #

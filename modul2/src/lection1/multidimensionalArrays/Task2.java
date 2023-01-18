@@ -1,4 +1,4 @@
-package lection1;
+package lection1.multidimensionalArrays;
 
 /**
  *  Создать многомерный массив 10 x 10. Заполнить его символом # таким образом,
@@ -13,5 +13,6 @@ package lection1;
  */
 public class Task2 {
 
+    //TODO Написать код
 
 }
