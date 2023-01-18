@@ -1,4 +1,4 @@
-package task2;
+package taskFromCh;
 
 import org.junit.Test;
 
@@ -8,20 +8,26 @@ import static org.junit.Assert.assertTrue;
 public class BracketsTest {
 
     @Test
-    public void testBrackets() {
+    public void test() {
         String line  = "( ( ( ) ) [ ] { } [ ] ) [ ]";
-        assertTrue(Brackets.brackets(line));
+        assertTrue(Brackets.parentheses(line));
     }
 
     @Test
     public void testBracketsNegative() {
         String line  = "( ( ( ) ) [ ] { } [ ] )  ]";
-        assertFalse(Brackets.brackets(line));
+        assertFalse(Brackets.parentheses(line));
+    }
+
+    @Test
+    public void testBracketsWithSymbol() {
+        String line  = "=hdh8";
+        assertTrue(Brackets.parentheses(line));
     }
 
     @Test
     public void testOpeningParenthesis() {
         String line  = "{{";
-        assertFalse(taskFromCh.Brackets.parentheses(line));
+        assertFalse(Brackets.parentheses(line));
     }
 }

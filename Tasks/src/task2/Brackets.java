@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * Есть текст в нём расставлены скобки. Проверить все ли скобки закрываются в
+ * правильном порядке.  (), [], {}  .
+ */
 public class Brackets {
-// TODO Прокомментировать код
     public static boolean brackets(String line) {
 
         char[] lineCh = line.toCharArray();
@@ -23,24 +26,36 @@ public class Brackets {
 
         Stack<Character> stack = new Stack<>();
 
-        for (int i = 0; i < allBrackets.size() ; i++) {
-            if (allBrackets.get(i).equals('{')||
-            allBrackets.get(i).equals('(') ||
-            allBrackets.get(i).equals('[')){
+        for (int i = 0; i < allBrackets.size(); i++) {
+            if (allBrackets.get(i).equals('{') ||
+                    allBrackets.get(i).equals('(') ||
+                    allBrackets.get(i).equals('[')) {
                 stack.push(allBrackets.get(i));
                 //TODO  Почитать про switch
-            }else switch (allBrackets.get(i)){
-                case '}' : if (stack.isEmpty() || stack.pop() != '{'){
-                    flag = false;
-                }break;
-                case ')' : if (stack.isEmpty() || stack.pop() != '('){
-                    flag = false;
-                }break;
-                case ']' : if (stack.isEmpty() || stack.pop() != '['){
-                    flag = false;
-                }break;
+            } else switch (allBrackets.get(i)) {
+                case '}':
+                    if (stack.isEmpty() || stack.pop() != '{') {
+                        flag = false;
+                    }
+                    break;
+                case ')':
+                    if (stack.isEmpty() || stack.pop() != '(') {
+                        flag = false;
+                    }
+                    break;
+                case ']':
+                    if (stack.isEmpty() || stack.pop() != '[') {
+                        flag = false;
+                    }
+                    break;
             }
         }
+        if (!stack.isEmpty()) flag = false;
         return flag;
+
+        // решение от PavelJH
+        //два условия, если оба true-то будет true,оба false - то будет false,
+        // если хотя бы одно условие будет false - nо все будет равно false
+        // return flag && stack.isEmpty();
     }
 }
