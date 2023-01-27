@@ -7,7 +7,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class Task1Test {
+public class Template1Test {
 
     @Test
     public void testTask1A() {
@@ -18,7 +18,7 @@ public class Task1Test {
         newList.add("HELLO");
         newList.add("NOT");
 
-        assertEquals(newList, Task1.task1A(list));
+        assertEquals(newList, Template1.task1A(list));
     }
 
     @Test
@@ -30,7 +30,7 @@ public class Task1Test {
         newList.add("hello");
         newList.add("not");
 
-        assertEquals(newList, Task1.task1B(list));
+        assertEquals(newList, Template1.task1B(list));
     }
 
     @Test
@@ -48,7 +48,7 @@ public class Task1Test {
         newList.add(18);
         newList.add(4);
 
-        assertEquals(newList, Task1.task2(list));
+        assertEquals(newList, Template1.task2(list));
     }
 
     @Test
@@ -64,7 +64,7 @@ public class Task1Test {
         newList.add(5);
         newList.add(4);
 
-        assertEquals(newList, Task1.task3(list));
+        assertEquals(newList, Template1.task3(list));
     }
 
 }

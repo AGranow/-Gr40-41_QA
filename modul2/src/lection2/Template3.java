@@ -1,9 +1,10 @@
 package lection2;
 
+import java.awt.*;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
+ * Шаблон №3.
  * Возьмите список, верните одно значение
  * Распространенный сценарий:
  * <p>
@@ -13,16 +14,21 @@ import java.util.List;
  * <p>
  * Задачи
  * <p>
- * 1. У вас есть список значений String, и вы должны вернуть одну строку,
- * которая представляет собой конкатенацию всех значений.
+ * 1. У вас есть список значений String, и вы должны вернуть одну строку, которая
+ * представляет собой конкатенацию всех значений.
  * 2. У вас есть список значений int и вы должны вернуть их сумму
  * 3. У вас есть список значений int и вы должны вернуть их максимум или минимум
  * 4. У вас есть список String и вы должны вернуть максимальную длину
  */
-public class Task3 {
 
-    public static List<String> task1() {
-        List newList = new ArrayList();
-        return newList;
+public class Template3 {
+
+    public static String task1(ArrayList<String> list){
+        String rezString="";
+        for (int i = 0; i < list.size(); i++) {
+            rezString = rezString + list.get(i);
+        }
+        return rezString;
     }
+
 }

@@ -13,10 +13,13 @@ public class MethodsList {
         list.add(7);  // 5,7
         list.add(9);  //5/7/9
         list.add(0);  // 5,7,9,0
+        System.out.println(list);
 
         list.add(1,3);// 5,3,7,9,0
+        System.out.println(list);
         list.get(2);
         list.remove(2);
+        System.out.println(list);
         list.clear();
         list.indexOf(9);
         list.isEmpty();
